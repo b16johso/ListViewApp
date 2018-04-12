@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onItemClick(AdapterView<?> arg0, View v, int arg2, long arg3) {
                 //here v is your ListItem's layout.
-                Toast.makeText(getApplicationContext(), mountainLocations[0], Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), mountainLocations[arg2] + ", " + mountainHeights[arg2] + "m", Toast.LENGTH_SHORT).show();
             }
         });
     }
